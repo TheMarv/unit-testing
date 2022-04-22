@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch"
   },
   "repository": {
     "type": "git",
@@ -13,8 +14,13 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/TheMarv/unit-testing/issues"
   },
-  "homepage": "https://github.com/TheMarv/unit-testing#readme"
+  "homepage": "https://github.com/TheMarv/unit-testing#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  }
 }
